@@ -52,7 +52,8 @@ router = APIRouter(tags=["Utility"], prefix='/Utility')
 
 load_dotenv('fastApi/.env')
 
-client = OpenAI(api_key=os.environ['openai_api_key'])
+# client = OpenAI(api_key=os.environ['openai_api_key'])
+client = None
 
 # County abbreviation to full name mapping
 COUNTY_MAPPING = {
